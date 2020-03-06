@@ -1,7 +1,8 @@
-/* .canvas {
-    border: 1px solid black;
-} */
-
+h1 {
+    margin-left: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(122, 122, 240);
+}
 .container-y{
     display:block;
 }
@@ -25,11 +26,12 @@
     padding-left: 210px;
 }
 .cuadrado{
-    width: 40px;
+    width: 50px;
     height: 45px;
-    border: 2px black solid;
     margin: 5px;
-
+}
+.cuadrado:hover, .color-picker:hover, .goma:hover,.pen-select:hover {
+    cursor: pointer;
 }
 
 .circulo{
@@ -42,4 +44,17 @@
 
 .color-picker {
     height:50px;
+}
+
+.pen, .goma-ico{
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+.goma-ico{
+    
+}
+.goma{
+    width: 45px;
+    height: 50px;
 }

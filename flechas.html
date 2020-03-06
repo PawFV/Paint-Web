@@ -8,24 +8,18 @@
     </head>
 
     <body>
-        <h1>Paint something</h1>
-        <h2>HOLAA</h2>
+        <h1>Paint like a cocksucker :)</h1>
 
         <div class="padre">
             <input type="color" width="200px" value="#ff0000" id="colorPicker" class="color-picker">
-            <div class="cuadrado blanco" onclick="fill()">
-                
-            </div>
-            
+            <img src="/images/pen.png" id="pen-select" class="pen-select" width="45px" height="55px" onclick="borrar(false)">
+            <img src="/images/goma.png" alt="goma de borrar" id="goma-select" class="goma" onclick="borrar(true)">
+            <img src="/images/balde.png" alt="balde" class="cuadrado" onclick="fill()">
         </div>
-        <div class="container-y">
-            <p class="y">Y:0 🡣</p>
-            <p class="x">X:0 🡢</p>
-            <canvas width="300" height="300" id="area_dibujo" class="canvas" style="border: 2px solid black;">
-                
-
-            </canvas>
-        </div>
+        
+        <canvas width="300" height="300" id="area_dibujo" class="canvas" style="border: 2px solid black;"></canvas> 
+        <img src="/images/pen.png" id="pen" class="pen" width="40px" height="40px">
+        <img src="/images/goma-ico.png" id="gomaIco" class="goma-ico" width="10px" height="10px">
         
     </body>
     <script src="eventos.jsx"></script>
