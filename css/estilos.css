@@ -1,0 +1,29 @@
+.padre{
+    display: flex;
+}
+.cuadrado{
+    width: 40px;
+    height: 55px;
+    border: 2px black solid;
+    margin: 5px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border: 2px white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.verde{
+    background-color: green;
+}
