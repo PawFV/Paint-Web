@@ -1,9 +1,13 @@
+// EVENTOS
 document.addEventListener("mousedown", dibujarOn);
 document.addEventListener("mousemove", dibujando);
 document.addEventListener("mouseup", dibujarOff);
+
+// CANVAS
 var cuadrito = document.getElementById("area_dibujo");
 var papel = cuadrito.getContext('2d');
 
+//
 var x, y, color;
 var quiereDibujo = false;
 
@@ -59,29 +63,3 @@ function dibujar(col = "red", i1, i2, l1, l2, lienzo, wd = 2) {
     lienzo.closePath();
 }
 
-
-/*
-function dibujarTeclado(evento) {
-    switch (evento.keyCode) {
-        case teclas.DOWN:
-            y = y + 5;
-            dibujar("red", x, y - 5, x, y, papel);
-            console.log(x, y);
-            break;
-        case teclas.UP:
-            y = y - 5;
-            dibujar("red", x, y + 5, x, y, papel);
-            console.log(x, y);
-            break;
-        case teclas.LEFT:
-            x = x - 5;
-            dibujar("red", x + 5, y, x, y, papel);
-            console.log(x, y);
-            break;
-        case teclas.RIGHT:
-            x = x + 5;
-            dibujar("red", x - 5, y, x, y, papel);
-            console.log(x, y);
-            break;
-    }
-}*/
