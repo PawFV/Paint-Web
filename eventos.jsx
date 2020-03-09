@@ -18,14 +18,13 @@ var quiereBorrar = false
 
 
 
-function dibujar(col = 'red', l1, l2, lienzo, lw = 3, lj = 'round', lc = 'round') {
+function dibujar(col = 'red', x, y, lienzo, lw = 2, lj = 'round', lc = 'round') {
     lienzo.strokeStyle = col
     lienzo.lineWidth = lw
     lienzo.lineJoin = lj
     lienzo.lineCap = lc
-    lienzo.lineTo(l1, l2)
+    lienzo.lineTo(x, y)
     lienzo.stroke()
-    console.log(lienzo.lineWidth)
 }
 
 function dibujarOn()
